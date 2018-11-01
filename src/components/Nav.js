@@ -13,7 +13,6 @@ const Navlist = styled.section`
   display: flex;
   list-style: none;
   padding: 25px 0px;
-  justify-content: flex-end;
 `;
 
 const NavContent = styled.li`
