@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   position: relative;
   top: 0;
-  background-color: #000000;
+  background-color: #FFFFFF;
   width: 100%;
 `;
 
@@ -17,7 +17,7 @@ const Navlist = styled.section`
 `;
 
 const NavContent = styled.li`
-  color: #FFFFFF;
+  color: #000000;
   padding-right: 20px;
 `;
 
