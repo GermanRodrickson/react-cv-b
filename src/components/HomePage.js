@@ -6,29 +6,47 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   background-color: #32363e;
   width: 100%;
+  padding: 6rem 0;
 `;
 
 
 const Title = styled.h1`
   letter-spacing: 2px;
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
+  color: #44bafc;
 `;
 
 const Button = styled.button`
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 1em 2em;
+  color: #bec6d5;
+  display: block;
+  transition: 0.3s;
+  letter-spacing: 2px;
 
+  &:hover {
+    box-shadow: inset -6.5em 0 0 0 #44bafc, inset 6.5em 0 0 0 #44bafc;
+    color: #000000;
+    border: 2px solid #bec6d5;
+  }
 `;
 
 const Text = styled.p`
   color: #bec6d5;
-  width: 50%;
+  text-align: center;
   margin: 0 auto;
   font-size: 1.2rem;
+  margin: 40px 0;
 `;
 
 const Link = styled.a`
+  color: #44BAFC;
   display: inline-block;
-  transition: all 100ms linear;
+  transition: all .2s linear;
   background: -webkit-gradient(
     linear,
     left top,
@@ -42,7 +60,8 @@ const Link = styled.a`
   background-position: left 95%;
 
   &:hover {
-    background-size: 100% 10px;
+    background-size: 100% 6px;
+    color: #FFFFFF;
   }
 `;
 
@@ -52,13 +71,8 @@ class HomePage extends Component {
     return <Wrapper>
         <Title>Frontend Developer</Title>
         <Text>
-          Hi, I'm Germán! I'm a <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> graduate in Full
-          Stack Development. Previously, I was working in a hospital where I
-          was dealing with pressure on a daily basis. Looking to leave my
-          comfort zone and learn new things, I dove into an unknown sector
-          to start a new adventure and grow as a person. I'm known to
-          behands-on, dynamic, communicative, enthusiastic, eager to learn,
-          easy going and a team player.
+          Hi, I'm <Link href="#">Germán</Link>! I'm a <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> graduate in Full
+          Stack Development.
         </Text>
         <Button>Get in Touch</Button>
       </Wrapper>;
