@@ -33,6 +33,7 @@ class Skills extends Component {
         <Box>jQuery</Box>
         <Box>Git</Box>
         <Box>Github</Box>
+        <Box>Command Line</Box>
       </Wrapper>
     );
   }
