@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 
-
 const Wrapper = styled.section`
   background-color: #32363e;
   width: 100%;
