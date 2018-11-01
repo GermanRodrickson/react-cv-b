@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  margin: 0 20%;
+  margin: 0 auto;
+  width: 50%;
 `;
 
 const Box = styled.div`
@@ -14,7 +15,8 @@ const Box = styled.div`
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   margin: 0.5rem;
   display: inline-block;
-  width: 20%;
+  width: 200px;
+  text-align: center;
 `;
 
 
