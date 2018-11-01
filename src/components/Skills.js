@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  width: 1200px;
   margin: 0 auto;
-  width: 50%;
 `;
 
 const Box = styled.div`
@@ -17,6 +17,10 @@ const Box = styled.div`
   display: inline-block;
   width: 200px;
   text-align: center;
+
+  &:hover {
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 
@@ -27,6 +31,7 @@ class Skills extends Component {
         <Box>React</Box>
         <Box>AngularJS</Box>
         <Box>Node.js</Box>
+        <Box>JavaScript</Box>
         <Box>HTML</Box>
         <Box>SASS</Box>
         <Box>MongoDB</Box>
@@ -34,6 +39,7 @@ class Skills extends Component {
         <Box>Git</Box>
         <Box>Github</Box>
         <Box>Command Line</Box>
+        <Box>TypeScript</Box>
       </Wrapper>
     );
   }
