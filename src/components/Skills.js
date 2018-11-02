@@ -22,7 +22,8 @@ import nodejs from '../img/nodejs.png'
 const Wrapper = styled.section`
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding: 2rem 0;
+  position: relative;
 `;
 
 const Box = styled.div`
@@ -35,6 +36,7 @@ const Box = styled.div`
   margin: 0.5rem;
   display: inline-block;
   width: 200px;
+  height: 80px;
   text-align: center;
 
   &:hover {
@@ -54,13 +56,25 @@ const Title = styled.h2`
   letter-spacing: 2px;
   font-size: 3rem;
   color: #32363e;
-  margin: 40px;
+  margin: 30px 0px;
 `;
 
+const Triange = styled.div`
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 40px;
+  border-color: #32363e transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -40px;
+`;
 
 class Skills extends Component {
   render() {
     return <Wrapper>
+        <Triange></Triange>
         <Title>Skills</Title>
         <Box><Img src={react} />React</Box>
         <Box><Img src={angular} />AngularJS</Box>

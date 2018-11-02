@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-
 const Wrapper = styled.section`
   background-color: #32363e;
   width: 100%;
   padding: 6rem 0;
 `;
-
 
 const Title = styled.h1`
   letter-spacing: 2px;
@@ -70,7 +68,7 @@ class HomePage extends Component {
     return <Wrapper>
         <Title>Frontend Developer</Title>
         <Text>
-          Hi, I'm <Link href="#">Germán</Link>! I'm a <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> graduate in Full
+          Hi, I'm <Link href="#">Germán</Link>! 👋🏻 I'm a <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> graduate in Full
           Stack Development.
         </Text>
         <Button>Get in Touch</Button>
