@@ -13,7 +13,7 @@ import linkedin from "../img/linkedin-brands.svg";
 
 
 const Wrapper = styled.section`
-  background-color: #000000;
+  background-color: #32363e;
   width: 100%;
   padding: 2rem 0;
   display: flex;
@@ -22,14 +22,14 @@ const Wrapper = styled.section`
 
 const Title = styled.h3`
   font-size: 2.2rem;
-  color: #999999;
+  color: #bec6d5;
   text-transform: uppercase;
   margin-bottom: 10px;
 `;
 
 const Email = styled.p`
   font-size: 1rem;
-  color: #999999;
+  color: #bec6d5;
   text-transform: uppercase;
 `;
 
@@ -58,18 +58,18 @@ const Img = styled.img`
 
 class HomePage extends Component {
   render() {
-    return (
-    <Wrapper>
-      <WrapperText>
-        <Title>Germán R. Ojeda</Title>
-        <Email>germanrodrickson@gmail.com</Email>
-      </WrapperText>
-      <WrapperIcons>
-        <Img src={github} />
-        <Img src={linkedin} />
-      </WrapperIcons>
-    </Wrapper>
-    )
+    return <Wrapper>
+        <a href="mailto:germanrodrickson@gmail.com?subject=Hello,%20I%20saw%20your%20web!">
+          <WrapperText>
+            <Title>Germán R. Ojeda</Title>
+            <Email>germanrodrickson@gmail.com</Email>
+          </WrapperText>
+        </a>
+        <WrapperIcons>
+          <Img src={github} />
+          <Img src={linkedin} />
+        </WrapperIcons>
+      </Wrapper>;
   }
 }
 
