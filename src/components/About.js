@@ -16,12 +16,10 @@ const Wrapper = styled.section`
 `;
 
 const Img = styled.img`
-  border-radius: 50%;
   width: 350px;
   height: 350px;
-  display: block;
-  margin: 0 auto;
-`
+  display: inline-block;
+`;
 
 
 const Title = styled.h2`
@@ -33,17 +31,18 @@ const Title = styled.h2`
 `
 
 const Text = styled.p`
-  width: 900px;
+  width: 500px;
   font-size: 1.2rem;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
   align-content: top;
   margin-top: 45px;
+  line-height: 1.6;
 `;
 
 const WrapperText = styled.div`
-
-`
+  display: flex;
+  justify-content: center;
+`;
 
 const Triange = styled.div`
   width: 0;
@@ -58,22 +57,21 @@ const Triange = styled.div`
   margin-right: -40px;
 `;
 
+const Word = styled.strong`
+  color: #44bafc;
+`;
 
 class About extends Component {
   render() {
     return <Wrapper>
-        <Triange></Triange>
+        <Triange />
         <Title>Bio</Title>
-        <WrapperText>
-          <Img src={profile} />
+          <WrapperText>
+            <Img src={profile} />
           <Text>
-            I'm a recent Ironhack Barcelona graduate in Full Stack
-            Development.<br/> <br/>Previously, I was working in a hospital where I was
-            dealing with pressure on a daily basis. Looking to leave my
-            comfort zone and learn new things, I dove into an unknown sector
-            to start a new adventure and grow as a person.<br/> <br/>I'm known to be
-            hands-on, dynamic, communicative, enthusiastic, eager to learn,
-            easy going and a team player.
+            Previously, I was working in a <Word>hospital</Word> where I was dealing with pressure on a daily basis. Looking to <Word>leave my comfort zone</Word> and learn new things, I dove into an unknown sector to start a new adventure and <Word>grow as a person.</Word>
+            <br /> <br />
+            I'm known to be hands-on, dynamic, communicative, enthusiastic, eager to learn, easy going and a team player.
           </Text>
         </WrapperText>
       </Wrapper>;
