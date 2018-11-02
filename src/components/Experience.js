@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled.section`
-  background-color: #fcfcfc;
+  background-color: #fdfdfd;
   width: 100%;
   padding: 2rem 0;
 `;

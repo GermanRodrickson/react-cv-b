@@ -31,6 +31,9 @@ const Email = styled.p`
   font-size: 1rem;
   color: #bec6d5;
   text-transform: uppercase;
+  &:hover {
+    color: #999999;
+  }
 `;
 
 const WrapperIcons = styled.div`
@@ -41,7 +44,7 @@ const WrapperIcons = styled.div`
 
 const WrapperText = styled.div`
   padding: 10px;
-`
+`;
 
 const Img = styled.img`
   width: 50px;
@@ -51,6 +54,10 @@ const Img = styled.img`
   &:hover {
     transform: translate3d(0px,5px,0px);
   }
+`;
+
+const Link = styled.a`
+
 `;
 
 
@@ -66,8 +73,8 @@ class HomePage extends Component {
           </WrapperText>
         </a>
         <WrapperIcons>
-          <Img src={github} />
-          <Img src={linkedin} />
+          <a href="https://github.com/GermanRodrickson" target="_blank"><Img src={github} /> </a>
+          <a href="https://www.linkedin.com/in/germ%C3%A1n-rodr%C3%ADguez-ojeda-001255158/" target="_blank"> <Img src={linkedin} /> </a>
         </WrapperIcons>
       </Wrapper>;
   }
