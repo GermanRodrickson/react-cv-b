@@ -22,6 +22,7 @@ import nodejs from '../img/nodejs.png'
 const Wrapper = styled.section`
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 40px;
 `;
 
 const Box = styled.div`
@@ -48,10 +49,19 @@ const Img = styled.img`
   margin-bottom: 20px;
 `
 
+const Title = styled.h2`
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #32363e;
+  margin: 40px;
+`;
+
 
 class Skills extends Component {
   render() {
     return <Wrapper>
+        <Title>Skills</Title>
         <Box><Img src={react} />React</Box>
         <Box><Img src={angular} />AngularJS</Box>
         <Box><Img src={nodejs} />Node.js</Box>

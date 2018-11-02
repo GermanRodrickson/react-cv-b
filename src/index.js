@@ -8,6 +8,7 @@ import './index.css';
 import Nav from './components/Nav';
 import HomePage from './components/HomePage';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 
 
 const root = document.getElementById('root');
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Nav />
     <HomePage />
     <Skills />
+    <Experience />
   </section>
   
   ,root);
