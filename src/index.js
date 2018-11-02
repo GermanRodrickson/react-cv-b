@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import HomePage from './components/HomePage';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import About from './components/About';
 import Contact from './components/Contact';
 
 
@@ -20,6 +21,7 @@ ReactDOM.render(
     <HomePage />
     <Skills />
     <Experience />
+    <About />
 
     <Contact />
   </section>,

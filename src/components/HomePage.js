@@ -29,7 +29,7 @@ const Button = styled.button`
 
   &:hover {
     box-shadow: inset -6.5em 0 0 0 #44bafc, inset 6.5em 0 0 0 #44bafc;
-    color: #000000;
+    color: #FFFFFF;
     border: 2px solid #bec6d5;
   }
 `;
