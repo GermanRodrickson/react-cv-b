@@ -23,6 +23,7 @@ const Img = styled.img`
   margin: 0 auto;
 `
 
+
 const Title = styled.h2`
   letter-spacing: 2px;
   text-align: center;
