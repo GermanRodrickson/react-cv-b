@@ -10,9 +10,9 @@ import github from '../img/github.png'
 import html from '../img/html.png'
 import sass from '../img/sass.png'
 import typescript from '../img/typescript.png'
-import react from '../img/react.png'
+import react from '../img/react-brands.svg'
 import mongodb from '../img/mongodb.png'
-import jquery from '../img/jquery.jpg'
+import jquery from '../img/jquery.png'
 import javascript from '../img/javascript.png'
 import nodejs from '../img/nodejs.png'
 
@@ -59,11 +59,11 @@ class Skills extends Component {
         <Box><Img src={html} />HTML</Box>
         <Box><Img src={sass} />SASS</Box>
         <Box><Img src={mongodb} />MongoDB</Box>
-        <Box><Img src={jquery} />jQuery</Box>
+        <Box><Img src={typescript} />TypeScript</Box>
         <Box><Img src={git} />Git</Box>
         <Box><Img src={github} />Github</Box>
         <Box><Img src={commandline} />Command Line</Box>
-        <Box><Img src={typescript} />TypeScript</Box>
+        <Box><Img src={jquery} />jQuery</Box>
       </Wrapper>;
   }
 }
