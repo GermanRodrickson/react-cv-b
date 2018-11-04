@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import Typist from 'react-typist';
 
 
@@ -11,7 +11,16 @@ const Wrapper = styled.section`
 
   span {
     font-size: 3em;
-  }
+    animation-name: blinker;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    @keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+}
 `;
 
 const Title = styled.h2`
@@ -19,10 +28,11 @@ const Title = styled.h2`
   text-align: center;
   font-size: 3rem;
   color: #32363e;
+  margin-bottom: 40px;
 `;
 
 const Text = styled.a`
-  font-size: 1.4em;
+  font-size: 2.5em;
   text-align: center;
   display: inline-block;
   width: auto;
@@ -35,10 +45,19 @@ class Portfolio extends Component {
 
 
     return <Wrapper>
-        <Typist cursor={{ hideWhenDone: true, hideWhenDoneDelay: 0 }}>
-          <span> Working on it  </span>
+      <Title>Portfolio</Title>
+        <Typist>
+          <Text> Working on it </Text>
           <Typist.Backspace count={19} delay={200} />
-          <span> Trabajando en ello </span>
+          <Text> Trabajando en ello </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> J'y travaille </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Lavorando su di esso </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> Работаю над эти </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> 正在努力 </Text>
         </Typist>
       </Wrapper>;
   }
