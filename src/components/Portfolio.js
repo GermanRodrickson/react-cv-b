@@ -24,11 +24,12 @@ const Wrapper = styled.section`
 `;
 
 const Title = styled.h2`
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-align: center;
   font-size: 3rem;
   color: #32363e;
   margin-bottom: 40px;
+  font-weight: 600;
 `;
 
 const Text = styled.a`
@@ -42,11 +43,33 @@ const Text = styled.a`
 
 class Portfolio extends Component {
   render() {
-
-
     return <Wrapper>
       <Title>Portfolio</Title>
         <Typist>
+          <Text> Working on it </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Trabajando en ello </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> J'y travaille </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Lavorando su di esso </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> Работаю над эти </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> 正在努力 </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Working on it </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Trabajando en ello </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> J'y travaille </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Lavorando su di esso </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> Работаю над эти </Text>
+          <Typist.Backspace count={22} delay={200} />
+          <Text> 正在努力 </Text>
+          <Typist.Backspace count={19} delay={200} />
           <Text> Working on it </Text>
           <Typist.Backspace count={19} delay={200} />
           <Text> Trabajando en ello </Text>

@@ -29,7 +29,8 @@ const Title = styled.h2`
   font-size: 3rem;
   color: #32363e;
   margin: 40px 0px 0px 0px;
-`
+  font-weight: 600;
+`;
 
 const Text = styled.p`
   width: 500px;
