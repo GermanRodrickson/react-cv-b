@@ -22,8 +22,8 @@ ReactDOM.render(
     <HomePage />
     <Skills />
     <Experience />
-    <About />
     <Portfolio />
+    <About />
 
     <Contact />
   </section>,
