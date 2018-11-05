@@ -43,7 +43,7 @@ const ColumnDev = styled.div`
   width: 50%;
   display: inline-block;
   font-size: 0px;
-  height: 300px;
+  height: 400px;
 `;
 
 const SecondaryTitle = styled.h3`
@@ -86,7 +86,8 @@ const Date = styled.p`
 const List = styled.li`
   font-size: 1.3rem;
   color: #bec6d5;
-  margin-left: 30px;
+  margin: 0 30px;
+  padding-bottom: 5px;
 `;
 
 
@@ -99,9 +100,9 @@ class Experience extends Component {
           <TextWrapper>
             <Works>Frotend Developer</Works>
             <Text>This is my firts job as a Frontend Developer.</Text>
-            <List>UI Developer using <strong>SASS</strong> and <strong>gulp</strong></List>
+            <List>UI Developer using SASS and gulp, also using Javascript and DOM manipulation</List>
             <List>React</List>
-            <List>Newsletter</List>
+            <List>Newsletter using Selligent</List>
           </TextWrapper>
             <Img src={logo}></Img>
             <Date>2018 - actualidad</Date>
