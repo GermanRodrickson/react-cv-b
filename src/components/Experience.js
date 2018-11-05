@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 //-------Images
 
-import nodejs from "../img/nodejs.png";
+import logo from "../img/logo.png";
 
 //-------
 
@@ -25,8 +25,9 @@ const Title = styled.h2`
 
 const Text = styled.p`
   color: #bec6d5;
-  margin: 0 auto;
+  margin-bottom: 30px;
   font-size: 1.2rem;
+
 `;
 
 const ColumnHosp = styled.div`
@@ -61,19 +62,31 @@ const TextWrapper = styled.div`
 `
 
 const Works = styled.h4`
-  margin: 0 auto;
+  margin-bottom: 15px;
   font-size: 1.7rem;
-
-  color
+  font-weight: 600;
 `;
 
 
 const Img = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 200px;
   position: absolute;
-  top: 15%;
+  top: 30%;
   left: 10%;
+`;
+
+const Date = styled.p`
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  color: #bec6d5;
+  font-size: 1.2rem;
+`
+
+const List = styled.li`
+  font-size: 1.3rem;
+  color: #bec6d5;
+  margin-left: 30px;
 `;
 
 
@@ -84,11 +97,14 @@ class Experience extends Component {
         <ColumnDev>
           <SecondaryTitle>As a Developer <span role="img" aria-label="laptop">💻</span></SecondaryTitle>
           <TextWrapper>
-            <Works>Barcelona Virtual</Works>
-            <Text>2018 - actualidad <br/><br/>Frontend Developer</Text>
-            <Text>This is my firts job as a developer, we are using <strong>PHP</strong>, <strong>SASS</strong> and now we are implementing <strong>React</strong>.</Text>
+            <Works>Frotend Developer</Works>
+            <Text>This is my firts job as a Frontend Developer.</Text>
+            <List>UI Developer using <strong>SASS</strong> and <strong>gulp</strong></List>
+            <List>React</List>
+            <List>Newsletter</List>
           </TextWrapper>
-            <Img src={nodejs}></Img>
+            <Img src={logo}></Img>
+            <Date>2018 - actualidad</Date>
         </ColumnDev>
         <ColumnHosp>
           <SecondaryTitle>As a medical imaging technician <span role="img" aria-label="hospital">🏥</span></SecondaryTitle>
