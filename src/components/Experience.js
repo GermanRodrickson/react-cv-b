@@ -72,14 +72,13 @@ const Img = styled.img`
   width: 200px;
   position: absolute;
   top: 30%;
-  left: 10%;
-`;
+  left: ${props => props.developer ? "10%" : "90%"};
+  `;
 
 const Date = styled.p`
   position: absolute;
   top: 50%;
   left: 11%;
-  color: #bec6d5;
   font-size: 1.2rem;
 `
 
@@ -104,12 +103,12 @@ class Experience extends Component {
             <List>React</List>
             <List>Newsletter using Selligent</List>
           </TextWrapper>
-            <Img src={logo}></Img>
+            <Img developer src={logo}></Img>
             <Date>2018 - actualidad</Date>
         </ColumnDev>
         <ColumnHosp>
           <SecondaryTitle>As a medical imaging technician <span role="img" aria-label="hospital">🏥</span></SecondaryTitle>
-          
+            <Works>Medical imaging technician</Works>
         </ColumnHosp>
       </Wrapper>;
   }
