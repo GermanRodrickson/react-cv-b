@@ -81,6 +81,8 @@ class Portfolio extends Component {
           <Text> Работаю над эти </Text>
           <Typist.Backspace count={22} delay={200} />
           <Text> 正在努力 </Text>
+          <Typist.Backspace count={19} delay={200} />
+          <Text> Working on it </Text>
         </Typist>
       </Wrapper>;
   }

@@ -32,10 +32,11 @@ const Text = styled.p`
 
 const ColumnHosp = styled.div`
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 50%;
   display: inline-block;
   font-size: 0px;
+  height: 400px;
 `;
 const ColumnDev = styled.div`
   position: relative;
@@ -77,7 +78,7 @@ const Img = styled.img`
 
 const Date = styled.p`
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 11%;
   font-size: 1.2rem;
 `
@@ -89,6 +90,15 @@ const List = styled.li`
   padding-bottom: 5px;
 `;
 
+const BarcelonaVirtual = styled.a`
+  color: #c64145;
+
+  &:hover {
+    text-decoration: underline;
+    color: #c64145;
+  }
+`;
+
 
 class Experience extends Component {
   render() {
@@ -98,7 +108,7 @@ class Experience extends Component {
           <SecondaryTitle>As a Developer <span role="img" aria-label="laptop">💻</span></SecondaryTitle>
           <TextWrapper>
             <Works>Frotend Developer</Works>
-            <Text>This is my firts job as a Frontend Developer.</Text>
+            <Text>This is my firts job as a Frontend Developer, working in <BarcelonaVirtual href="https://www.bvirtual.com/">Barcelona Virtual</BarcelonaVirtual></Text>
             <List>UI Developer using SASS and gulp, also using Javascript and DOM manipulation</List>
             <List>React</List>
             <List>Newsletter using Selligent</List>
@@ -108,7 +118,11 @@ class Experience extends Component {
         </ColumnDev>
         <ColumnHosp>
           <SecondaryTitle>As a medical imaging technician <span role="img" aria-label="hospital">🏥</span></SecondaryTitle>
-            <Works>Medical imaging technician</Works>
+            <TextWrapper>
+              <Works>Medical imaging technician</Works>
+              <Date>2018 - actualidad</Date>
+
+            </TextWrapper>
         </ColumnHosp>
       </Wrapper>;
   }
