@@ -27,7 +27,7 @@ const Text = styled.p`
   color: #bec6d5;
   margin-bottom: 30px;
   font-size: 1.2rem;
-
+  color: ${props => props.developer ? "#bec6d5" : "#000000"};
 `;
 
 const ColumnHosp = styled.div`
@@ -48,7 +48,7 @@ const ColumnDev = styled.div`
 `;
 
 const SecondaryTitle = styled.h3`
-  color: #bec6d5;
+  color: ${props => props.developer ? "#bec6d5" : "#000000"};
   text-align: center;
   margin: 0 auto;
   font-size: 2rem;
@@ -78,10 +78,10 @@ const Img = styled.img`
 
 const Date = styled.p`
   position: absolute;
-  top: 45%;
-  left: 11%;
+  top: ${props => props.developer ? "45%" : "90%"};
+  left: ${props => props.developer ? "11%" : "0%"};
   font-size: 1.2rem;
-`
+`;
 
 const List = styled.li`
   font-size: 1.3rem;
@@ -99,30 +99,46 @@ const BarcelonaVirtual = styled.a`
   }
 `;
 
+const DateHospital = styled.p`
+  color: #000000;
+  font-size: 1.2rem;
+`;
+
+const TextWrapperHosp = styled.div`
+  top: 30%;
+  position: absolute;
+  left: 35%;
+  width: 50%;
+`;
+
 
 class Experience extends Component {
   render() {
     return <Wrapper>
         <Title>Experience</Title>
         <ColumnDev>
-          <SecondaryTitle>As a Developer <span role="img" aria-label="laptop">💻</span></SecondaryTitle>
+          <SecondaryTitle developer>As a Developer <span role="img" aria-label="laptop">💻</span></SecondaryTitle>
           <TextWrapper>
-            <Works>Frotend Developer</Works>
-            <Text>This is my firts job as a Frontend Developer, working in <BarcelonaVirtual href="https://www.bvirtual.com/">Barcelona Virtual</BarcelonaVirtual></Text>
-            <List>UI Developer using SASS and gulp, also using Javascript and DOM manipulation</List>
+            <Works dev>Frotend Developer</Works>
+            <Text developer>This is my firts job as a Frontend Developer, working in <BarcelonaVirtual href="https://www.bvirtual.com/">Barcelona Virtual</BarcelonaVirtual></Text>
+            <List>UI Developer using SASS and gulp, also with Javascript and DOM manipulation</List>
             <List>React</List>
             <List>Newsletter using Selligent</List>
           </TextWrapper>
             <Img developer src={logo}></Img>
-            <Date>2018 - actualidad</Date>
+            <Date developer>2018 - actualidad</Date>
         </ColumnDev>
         <ColumnHosp>
           <SecondaryTitle>As a medical imaging technician <span role="img" aria-label="hospital">🏥</span></SecondaryTitle>
-            <TextWrapper>
+            <TextWrapperHosp>
+              <DateHospital>2016 - 2018</DateHospital>
               <Works>Medical imaging technician</Works>
-              <Date>2018 - actualidad</Date>
-
-            </TextWrapper>
+              <Text>Hospital de Sant Joan Despí Moisès Broggi</Text>
+              
+              <DateHospital>2016 - 2018</DateHospital>
+              <Works>Medical imaging technician</Works>
+              <Text>Hospital de Sant Joan Despí Moisès Broggi</Text>
+            </TextWrapperHosp>
         </ColumnHosp>
       </Wrapper>;
   }
