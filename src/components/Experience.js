@@ -9,9 +9,9 @@ import logo from "../img/logo.png";
 
 
 const Wrapper = styled.section`
-  background-color: #fdfdfd;
+  background-color: #f4f4f4;
   width: 100%;
-  padding: 2rem 0;
+  margin: 2rem 0;
 `;
 
 const Title = styled.h2`
@@ -137,7 +137,7 @@ class Experience extends Component {
               
               <DateHospital>2016 - 2018</DateHospital>
               <Works>Medical imaging technician</Works>
-              <Text>Hospital de Sant Joan Despí Moisès Broggi</Text>
+              <Text>Centre Médic Alomar</Text>
             </TextWrapperHosp>
         </ColumnHosp>
       </Wrapper>;
