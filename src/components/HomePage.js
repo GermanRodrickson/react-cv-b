@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import scrollToComponent from "react-scroll-to-component";
 
 const Wrapper = styled.section`
   background-color: #32363e;
@@ -66,13 +67,13 @@ const Link = styled.a`
 
 class HomePage extends Component {
   render() {
-    return <Wrapper>
+    return <Wrapper ref={(section) => { this.Violet = section; }}>
         <Title>Frontend Developer</Title>
         <Text>
           Hi, I'm <Link href="#">Germán</Link>! 👋🏻 I'm a <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> graduate in Full
           Stack Development.
         </Text>
-        <Button>Get in Touch</Button>
+      <Button onClick={() => scrollToComponent(this.Violet, { offset: 5, duration: 500, ease: 'inCirc' })} >Get in Touch</Button>
       </Wrapper>;
   }
 }

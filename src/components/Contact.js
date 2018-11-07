@@ -56,17 +56,11 @@ const Img = styled.img`
   }
 `;
 
-const Link = styled.a`
-
-`;
-
-
 
 
 class HomePage extends Component {
   render() {
     return <Wrapper>
-     
         <a href="mailto:germanrodrickson@gmail.com?subject=Hello,%20I%20saw%20your%20web!">
           <WrapperText>
             <Title>Germán R. Ojeda</Title>
@@ -74,8 +68,8 @@ class HomePage extends Component {
           </WrapperText>
         </a>
         <WrapperIcons>
-          <a href="https://github.com/GermanRodrickson" target="_blank"><Img src={github} /> </a>
-          <a href="https://www.linkedin.com/in/germ%C3%A1n-rodr%C3%ADguez-ojeda-001255158/" target="_blank"> <Img src={linkedin} /> </a>
+        <a href="https://github.com/GermanRodrickson" target="_blank" rel="noopener noreferrer"><Img src={github} /> </a>
+        <a href="https://www.linkedin.com/in/germ%C3%A1n-rodr%C3%ADguez-ojeda-001255158/" target="_blank" rel="noopener noreferrer"> <Img src={linkedin} /> </a>
         </WrapperIcons>
       </Wrapper>;
   }
