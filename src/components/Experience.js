@@ -9,7 +9,14 @@ import arrow from "../img/arrow.svg";
 
 //-------
 
-const Box = posed.div({
+const DivPrueba = styled.div`
+  width: 100px;
+  height: 100px;
+  background: #ff1c68;
+  transform-origin: 50% 50%;
+`;
+
+const Box = posed(DivPrueba)({
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 });
@@ -28,7 +35,7 @@ class Experience extends Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({ isVisible: !this.state.isVisible });
-    }, 1000);
+    }, 250);
   }
   render() {
     const { isVisible } = this.state;
