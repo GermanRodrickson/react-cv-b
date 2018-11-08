@@ -54,8 +54,6 @@ class Portfolio extends Component {
           <Typist.Backspace count={19} delay={200} />
           <Text> Lavorando su di esso </Text>
           <Typist.Backspace count={22} delay={200} />
-          <Text> Работаю над эти </Text>
-          <Typist.Backspace count={22} delay={200} />
           <Text> 正在努力 </Text>
           <Typist.Backspace count={19} delay={200} />
           <Text> Working on it </Text>
@@ -66,8 +64,6 @@ class Portfolio extends Component {
           <Typist.Backspace count={19} delay={200} />
           <Text> Lavorando su di esso </Text>
           <Typist.Backspace count={22} delay={200} />
-          <Text> Работаю над эти </Text>
-          <Typist.Backspace count={22} delay={200} />
           <Text> 正在努力 </Text>
           <Typist.Backspace count={19} delay={200} />
           <Text> Working on it </Text>
@@ -77,8 +73,6 @@ class Portfolio extends Component {
           <Text> J'y travaille </Text>
           <Typist.Backspace count={19} delay={200} />
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} />
-          <Text> Работаю над эти </Text>
           <Typist.Backspace count={22} delay={200} />
           <Text> 正在努力 </Text>
           <Typist.Backspace count={19} delay={200} />
