@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
+
+//------ Images
+import logo from "../img/logo.png";
+
+//-------
+
+
+//------- Elements
 import SvgArrow from './elements/SvgArrow'
+//-------
 
 const Wrapper = styled.section`
   background-color: #f4f4f4;
@@ -22,6 +32,29 @@ const Title = styled.h2`
   font-weight: 600;
 `;
 
+const SecondaryTitle = styled.h3`
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 2rem;
+  color: #32363e;
+`;
+
+const Img = styled.img`
+  display: inline-block;
+`
+
+const Text = styled.p`
+  font-size: 1.3em;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+`;
+
+const TextContainer = styled.div`
+
+`
+
 
 class Experience extends Component {
   render() {
@@ -29,7 +62,15 @@ class Experience extends Component {
       <Wrapper>
         <Container>
           <Title>Experience</Title>
-          <SvgArrow />
+          <SvgArrow /> 
+
+          <SecondaryTitle>Frontend Developer</SecondaryTitle>
+          <TextContainer>
+            <Img src={logo}/>
+            <Text>This is my first job I've been hired as a developer, focus on JavaScript, DOM manipulation, and CSS</Text>
+          </TextContainer>
+
+          <SecondaryTitle></SecondaryTitle>
         </Container>
       </Wrapper>
     )
