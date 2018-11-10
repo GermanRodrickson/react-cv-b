@@ -16,6 +16,7 @@ const Wrapper = styled.section`
   background-color: #f4f4f4;
   width: 100%;
   margin: 2rem 0;
+  position: relative;
 `;
 
 const Container = styled.div `
@@ -41,6 +42,7 @@ const SecondaryTitle = styled.h3`
 
 const Img = styled.img`
   display: inline-block;
+  margin-top: 30px;
 `
 
 const Text = styled.p`
@@ -49,6 +51,7 @@ const Text = styled.p`
   display: inline-block;
   width: auto;
   margin: 0 auto;
+  width: 60%;
 `;
 
 const TextContainer = styled.div`
@@ -65,10 +68,11 @@ class Experience extends Component {
           <SvgArrow /> 
 
           <SecondaryTitle>Frontend Developer</SecondaryTitle>
-          <TextContainer>
+          
             <Img src={logo}/>
-            <Text>This is my first job I've been hired as a developer, focus on JavaScript, DOM manipulation, and CSS</Text>
-          </TextContainer>
+            <Text>A marketing agency <br></br>
+            Focus with Javascript, SCSS and DOM manipulation</Text>
+          
 
           <SecondaryTitle></SecondaryTitle>
         </Container>
