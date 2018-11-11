@@ -10,7 +10,7 @@ import logo from "../img/logo.png";
 
 //------- Elements
 import SvgArrow from './elements/SvgArrow'
-import SvgArrow1 from './elements/SvgArrow.1'
+import SvgArrowHosp from './elements/SvgArrowHosp'
 //-------
 
 const Wrapper = styled.section`
@@ -40,6 +40,7 @@ const SecondaryTitle = styled.h3`
   font-size: 2rem;
   color: #32363e;
   margin-bottom: 20px;
+  font-weight: 600;
 `;
 
 const Img = styled.img`
@@ -93,7 +94,7 @@ class Experience extends Component {
             </Text>
           </DeveloperWrapper>
 
-          <SvgArrow1/>
+          <SvgArrowHosp/>
           <SecondaryTitle>Medical imaging technician</SecondaryTitle>
           <SecondaryTitle>Hospital de Sant Joan Despí Moisès Broggi</SecondaryTitle>
           <Text>🗓 2016-2018 </Text>
