@@ -38,26 +38,21 @@ const SecondaryTitle = styled.h3`
   text-align: center;
   font-size: 2rem;
   color: #32363e;
+  margin-bottom: 20px;
 `;
 
 const Img = styled.img`
-  display: inline-block;
-  margin-top: 30px;
+  display: block;
+  margin: 10px auto;
 `
 
 const Text = styled.p`
   font-size: 1.3em;
   text-align: center;
-  display: inline-block;
+  display: block;
   width: auto;
-  margin: 0 auto;
-  width: 60%;
+  margin: 10px auto;
 `;
-
-const TextContainer = styled.div`
-
-`
-
 
 class Experience extends Component {
   render() {
@@ -66,12 +61,9 @@ class Experience extends Component {
         <Container>
           <Title>Experience</Title>
           <SvgArrow /> 
-
+          <Img src={logo}/>
           <SecondaryTitle>Frontend Developer</SecondaryTitle>
-          
-            <Img src={logo}/>
-            <Text>A marketing agency <br></br>
-            Focus with Javascript, SCSS and DOM manipulation</Text>
+          <Text>Focus with <strong>Javascript</strong>, SCSS and DOM manipulation</Text>
           
 
           <SecondaryTitle></SecondaryTitle>

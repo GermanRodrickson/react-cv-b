@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const ContainerArrow = styled.div`
     position: absolute;
     top: 10px;
+    left: 350px;
   svg {
+    transform: rotate(-20deg);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -37,6 +39,17 @@ const ContainerArrow = styled.div`
 const Text = styled.p`
   font-size: 1.8rem;
   color: #32363e;
+  transform: rotate(-20deg);
+  opacity: 0;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-name: prueba;
+  
+  @keyframes prueba {
+    to {
+      opacity:1;
+    }
+  }
 `;
 
 
