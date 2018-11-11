@@ -10,12 +10,13 @@ import logo from "../img/logo.png";
 
 //------- Elements
 import SvgArrow from './elements/SvgArrow'
+import SvgArrow1 from './elements/SvgArrow.1'
 //-------
 
 const Wrapper = styled.section`
   background-color: #f4f4f4;
   width: 100%;
-  margin: 2rem 0;
+  padding: 2rem 0;
   position: relative;
 `;
 
@@ -54,22 +55,55 @@ const Text = styled.p`
   margin: 10px auto;
 `;
 
+const SCSS = styled.strong`
+  color: #cd679a;
+`;
+
+const Javascript = styled.strong`
+  color: #f8e018;
+`;
+
+const ReactWord = styled.strong`
+  color: #62dbfc;
+`;
+
+const DeveloperWrapper = styled.div`
+  padding-bottom: 30px;
+  border-bottom: 1px solid #32363e;
+  width: 60%;
+  margin: 20px auto;
+
+`;
+
 class Experience extends Component {
   render() {
-    return (
-      <Wrapper>
+    const prueba = { transform: 'scaleX(-1)'}
+    
+    return <Wrapper>
         <Container>
           <Title>Experience</Title>
-          <SvgArrow /> 
-          <Img src={logo}/>
-          <SecondaryTitle>Frontend Developer</SecondaryTitle>
-          <Text>Focus with <strong>Javascript</strong>, SCSS and DOM manipulation</Text>
-          
+          <SvgArrow />
 
-          <SecondaryTitle></SecondaryTitle>
+          <DeveloperWrapper>
+            <Img src={logo} />
+            <SecondaryTitle>Frontend Developer</SecondaryTitle>
+            <Text>🗓 2018 - Present</Text>
+            <Text>
+              Focus with <Javascript>Javascript</Javascript>, <SCSS>SCSS</SCSS> and <ReactWord>React</ReactWord>
+            </Text>
+          </DeveloperWrapper>
+
+          <SvgArrow1/>
+          <SecondaryTitle>Medical imaging technician</SecondaryTitle>
+          <SecondaryTitle>Hospital de Sant Joan Despí Moisès Broggi</SecondaryTitle>
+          <Text>🗓 2016-2018 </Text>
+          <br></br>
+          <br></br>
+          <SecondaryTitle>Medical imaging technician</SecondaryTitle>
+          <SecondaryTitle>Centre Médic Alomar</SecondaryTitle>
+          <Text>🗓 2017 </Text>
         </Container>
-      </Wrapper>
-    )
+      </Wrapper>;
     
   }
 }
