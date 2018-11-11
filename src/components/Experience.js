@@ -73,12 +73,18 @@ const DeveloperWrapper = styled.div`
   border-bottom: 1px solid #32363e;
   width: 60%;
   margin: 20px auto;
+`;
 
+const Place = styled.p`
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #32363e;
+  margin-bottom: 20px;
 `;
 
 class Experience extends Component {
   render() {
-    const prueba = { transform: 'scaleX(-1)'}
     
     return <Wrapper>
         <Container>
@@ -90,18 +96,18 @@ class Experience extends Component {
             <SecondaryTitle>Frontend Developer</SecondaryTitle>
             <Text>🗓 2018 - Present</Text>
             <Text>
-              Focus with <Javascript>Javascript</Javascript>, <SCSS>SCSS</SCSS> and <ReactWord>React</ReactWord>
+              Focus with <strong>Javascript</strong>, <strong>SCSS</strong> and <strong>React</strong>
             </Text>
           </DeveloperWrapper>
 
           <SvgArrowHosp/>
+          <Place>Hospital de Sant Joan Despí Moisès Broggi</Place>
           <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-          <SecondaryTitle>Hospital de Sant Joan Despí Moisès Broggi</SecondaryTitle>
           <Text>🗓 2016-2018 </Text>
           <br></br>
           <br></br>
+          <Place>Centre Mèdic Alomar</Place>
           <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-          <SecondaryTitle>Centre Médic Alomar</SecondaryTitle>
           <Text>🗓 2017 </Text>
         </Container>
       </Wrapper>;
