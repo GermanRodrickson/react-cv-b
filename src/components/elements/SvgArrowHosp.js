@@ -46,6 +46,8 @@ const Text = styled.p`
   animation-fill-mode: forwards;
   animation-name: prueba;
   margin-bottom: 20px;
+  display: block;
+
   @keyframes prueba {
     to {
       opacity: 1;

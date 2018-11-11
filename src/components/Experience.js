@@ -56,23 +56,11 @@ const Text = styled.p`
   margin: 10px auto;
 `;
 
-const SCSS = styled.strong`
-  color: #cd679a;
-`;
-
-const Javascript = styled.strong`
-  color: #f8e018;
-`;
-
-const ReactWord = styled.strong`
-  color: #62dbfc;
-`;
-
 const DeveloperWrapper = styled.div`
   padding-bottom: 30px;
   border-bottom: 1px solid #32363e;
   width: 60%;
-  margin: 20px auto;
+  margin: 50px auto;
 `;
 
 const Place = styled.p`
@@ -96,7 +84,7 @@ class Experience extends Component {
             <SecondaryTitle>Frontend Developer</SecondaryTitle>
             <Text>🗓 2018 - Present</Text>
             <Text>
-              Focus with <strong>Javascript</strong>, <strong>SCSS</strong> and <strong>React</strong>
+              Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
             </Text>
           </DeveloperWrapper>
 

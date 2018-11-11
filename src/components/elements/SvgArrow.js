@@ -10,7 +10,8 @@ const ContainerArrow = styled.div`
     width: 100px;
     height: 100px;
     position: absolute;
-    right: 30px;;
+    right: 30px;
+    
     .draw-arrow {
       stroke-width: 5;
       stroke: dodgerblue;
