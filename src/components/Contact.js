@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 import github from "../img/github-brands.svg";
 import linkedin from "../img/linkedin-brands.svg";
+import codepen from "../img/codepen-brands.svg";
 
 
 
@@ -70,6 +71,7 @@ class HomePage extends Component {
         <WrapperIcons>
         <a href="https://github.com/GermanRodrickson" target="_blank" rel="noopener noreferrer"><Img src={github} /> </a>
         <a href="https://www.linkedin.com/in/germ%C3%A1n-rodr%C3%ADguez-ojeda-001255158/" target="_blank" rel="noopener noreferrer"> <Img src={linkedin} /> </a>
+        <a href="https://codepen.io/GermanRodrickson/" target="_blank" rel="noopener noreferrer"> <Img src={codepen} /> </a>
         </WrapperIcons>
       </Wrapper>;
   }
