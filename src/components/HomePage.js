@@ -5,7 +5,7 @@ import scrollToComponent from "react-scroll-to-component";
 const Wrapper = styled.section`
   background-color: #32363e;
   width: 100%;
-  padding: 6rem 0;
+  padding: 10rem 0;
 `;
 
 const Title = styled.h1`
