@@ -46,7 +46,7 @@ const Link = styled.a`
   color: #44BAFC;
   display: inline-block;
   transition: all .2s linear;
-  background: -webkit-gradient(
+  background: (
     linear,
     left top,
     right top,
