@@ -40,6 +40,11 @@ const Text = styled.p`
   margin: 0 auto;
   font-size: 1.2rem;
   margin: 40px 0;
+  @media only screen and (max-width: 400px) {
+    & {
+      padding: 0 1em;
+    }
+  }
 `;
 
 const Link = styled.a`
