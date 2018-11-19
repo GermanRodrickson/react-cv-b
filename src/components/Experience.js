@@ -40,6 +40,9 @@ const SecondaryTitle = styled.h3`
   color: #32363e;
   margin-bottom: 20px;
   font-weight: 600;
+  @media only screen and (max-width: 500px) {
+    padding: 0 1em;
+  }
 `;
 
 const Img = styled.img`
@@ -57,8 +60,20 @@ const Text = styled.p`
 const DeveloperWrapper = styled.div`
   padding-bottom: 30px;
   border-bottom: 1px solid #32363e;
-  width: 60%;
+  width: 70%;
   margin: 50px auto;
+
+  @media only screen and (max-width: 500px) {
+    width: 90%;
+  }
+`;
+
+const HospitalWrapper = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  @media only screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 const Place = styled.p`
@@ -67,6 +82,9 @@ const Place = styled.p`
   font-size: 1.5rem;
   color: #32363e;
   margin-bottom: 20px;
+  @media only screen and (max-width: 500px) {
+    padding: 0 2em;
+  }
 `;
 
 class Experience extends Component {
@@ -75,7 +93,7 @@ class Experience extends Component {
     return <Wrapper>
         <Container>
           <Title>Experience</Title>
-          {/* <SvgArrow /> */}
+          <SvgArrow /> 
 
           <DeveloperWrapper>
             <Img src={logo} />
@@ -86,15 +104,17 @@ class Experience extends Component {
             </Text>
           </DeveloperWrapper>
 
-          {/* <SvgArrowHosp/> */}
-          <Place>Hospital de Sant Joan Despí Moisès Broggi</Place>
-          <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-          <Text>🗓 2016-2018 </Text>
-          <br></br>
-          <br></br>
-          <Place>Centre Mèdic Alomar</Place>
-          <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-          <Text>🗓 2017 </Text>
+          <SvgArrowHosp/>
+            <HospitalWrapper>
+            <Place>Hospital de Sant Joan Despí Moisès Broggi</Place>
+            <SecondaryTitle>Medical imaging technician</SecondaryTitle>
+            <Text>🗓 2016-2018 </Text>
+            <br></br>
+            <br></br>
+            <Place>Centre Mèdic Alomar</Place>
+            <SecondaryTitle>Medical imaging technician</SecondaryTitle>
+            <Text>🗓 2017 </Text>
+          </HospitalWrapper>
         </Container>
       </Wrapper>;
     

@@ -4,7 +4,16 @@ import styled from 'styled-components';
 const ContainerArrow = styled.div`
     position: absolute;
     top: 300px;
-    right: 250px;
+    right: 10%;
+    @media only screen and (max-width: 800px) {
+    & {
+      right: 0;
+    }
+    @media only screen and (max-width: 780px) {
+    & {
+      display: none;
+    }
+  }
   svg {
     transform: rotate(20deg);
     transform: scaleX(-1);
