@@ -24,6 +24,16 @@ const Wrapper = styled.section`
   margin: 0 auto;
   padding: 2rem 0;
   position: relative;
+  @media only screen and (max-width: 1200px) {
+    & {
+      width: 900px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    & {
+      width: 600px;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -38,6 +48,7 @@ const Box = styled.div`
   width: 200px;
   height: 80px;
   text-align: center;
+  align-content: top;
 
   &:hover {
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
