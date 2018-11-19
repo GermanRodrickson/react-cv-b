@@ -21,7 +21,6 @@ const Wrapper = styled.section`
 `;
 
 const Container = styled.div `
-  width: 1200px;
   margin: 0 auto;
 `
 
@@ -52,7 +51,6 @@ const Text = styled.p`
   font-size: 1.3em;
   text-align: center;
   display: block;
-  width: auto;
   margin: 10px auto;
 `;
 
@@ -77,7 +75,7 @@ class Experience extends Component {
     return <Wrapper>
         <Container>
           <Title>Experience</Title>
-          <SvgArrow />
+          {/* <SvgArrow /> */}
 
           <DeveloperWrapper>
             <Img src={logo} />
@@ -88,7 +86,7 @@ class Experience extends Component {
             </Text>
           </DeveloperWrapper>
 
-          <SvgArrowHosp/>
+          {/* <SvgArrowHosp/> */}
           <Place>Hospital de Sant Joan Despí Moisès Broggi</Place>
           <SecondaryTitle>Medical imaging technician</SecondaryTitle>
           <Text>🗓 2016-2018 </Text>
