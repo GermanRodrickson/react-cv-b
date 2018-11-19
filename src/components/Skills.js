@@ -34,6 +34,16 @@ const Wrapper = styled.section`
       width: 600px;
     }
   }
+  @media only screen and (max-width: 600px) {
+    & {
+      width: 400px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    & {
+      width: 300px;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -52,6 +62,18 @@ const Box = styled.div`
 
   &:hover {
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      width: 100px;
+      height: 80px;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+    }
   }
 `;
 
@@ -97,7 +119,7 @@ class Skills extends Component {
         <Box><Img src={typescript} />TypeScript</Box>
         <Box><Img src={git} />Git</Box>
         <Box><Img src={github} />Github</Box>
-        <Box><Img src={commandline} />Command Line</Box>
+        <Box><Img src={commandline} />Command</Box>
         <Box><Img src={jquery} />jQuery</Box>
       </Wrapper>;
   }
