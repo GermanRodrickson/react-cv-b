@@ -9,6 +9,7 @@ const ContainerArrow = styled.div`
     & {
       right: 0;
     }
+  }
     @media only screen and (max-width: 780px) {
     & {
       display: none;

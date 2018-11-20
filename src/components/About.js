@@ -20,7 +20,13 @@ const Img = styled.img`
   height: 350px;
   display: inline-block;
   border-radius: 50%;
-`
+  @media only screen and (max-width: 900px) {
+    & {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+`;
 
 
 const Title = styled.h2`
@@ -28,7 +34,7 @@ const Title = styled.h2`
   text-align: center;
   font-size: 3rem;
   color: #32363e;
-  margin: 40px 0px 0px 0px;
+  margin-top: 40px;
   font-weight: 600;
 `;
 
@@ -40,12 +46,25 @@ const Text = styled.p`
   margin-top: 45px;
   line-height: 1.6;
   margin-left: 140px;
-`
+  @media only screen and (max-width: 900px) {
+    & {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+`;
 
 const WrapperText = styled.div`
   display: flex;
   justify-content: center;
-`
+  @media only screen and (max-width: 900px) {
+    & {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+`;
 
 const Triange = styled.div`
   width: 0;

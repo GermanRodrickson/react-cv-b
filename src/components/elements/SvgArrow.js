@@ -9,10 +9,12 @@ const ContainerArrow = styled.div`
     & {
       left: 0;
     }
+  }
     @media only screen and (max-width: 780px) {
     & {
       display: none;
     }
+  }
   svg {
     transform: rotate(-20deg);
     width: 100px;

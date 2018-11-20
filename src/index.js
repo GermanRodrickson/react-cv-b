@@ -19,10 +19,10 @@ ReactDOM.render(
     <HomePage />
     <Skills />
     <Experience />
-    {/* <Portfolio /> 
-    <About />
+    <Portfolio /> 
+    <About /> 
   
-    <Contact /> */}
+    {/* <Contact />  */} 
   </section>,
 
   root
