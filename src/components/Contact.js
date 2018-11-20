@@ -19,6 +19,11 @@ const Wrapper = styled.section`
   padding: 2rem 0;
   display: flex;
   justify-content: space-around;
+  @media only screen and (max-width: 750px) {
+    & {
+     display: block;
+    }
+  }
 `;
 
 const Title = styled.h3`
@@ -26,6 +31,12 @@ const Title = styled.h3`
   color: #bec6d5;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media only screen and (max-width: 750px) {
+    & {
+      display: block;
+      text-align: center;
+    }
+  }
 `;
 
 const Email = styled.p`
@@ -35,13 +46,20 @@ const Email = styled.p`
   &:hover {
     color: #999999;
   }
+  @media only screen and (max-width: 750px) {
+    & {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 const WrapperIcons = styled.div`
   display: flex;
   padding: 10px;
   justify-content: center;
-`
+`;
 
 const WrapperText = styled.div`
   padding: 10px;
@@ -50,10 +68,15 @@ const WrapperText = styled.div`
 const Img = styled.img`
   width: 50px;
   height: 50px;
-  transition: .5s;
+  transition: 0.5s;
   padding: 0px 40px;
   &:hover {
-    transform: translate3d(0px,5px,0px);
+    transform: translate3d(0px, 5px, 0px);
+  }
+  @media only screen and (max-width: 375px) {
+    & {
+      padding: 15px;
+    }
   }
 `;
 

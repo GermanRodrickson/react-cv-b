@@ -22,7 +22,7 @@ ReactDOM.render(
     <Portfolio /> 
     <About /> 
   
-    {/* <Contact />  */} 
+    <Contact />  
   </section>,
 
   root
