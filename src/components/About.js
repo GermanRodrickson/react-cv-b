@@ -24,6 +24,13 @@ const Img = styled.img`
     & {
       display: block;
       margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    & {
+      width: 250px;
+      height: 250px;
     }
   }
 `;
@@ -51,6 +58,11 @@ const Text = styled.p`
       display: block;
       margin: 0 auto;
       margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    & {
+      width: 80%;
     }
   }
 `;
