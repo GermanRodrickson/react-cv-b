@@ -58,7 +58,7 @@ const Box = styled.div`
   width: 200px;
   height: 80px;
   text-align: center;
-  align-content: top;
+  vertical-align: top;
 
   &:hover {
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
@@ -119,7 +119,7 @@ class Skills extends Component {
         <Box><Img src={typescript} />TypeScript</Box>
         <Box><Img src={git} />Git</Box>
         <Box><Img src={github} />Github</Box>
-        <Box><Img src={commandline} />Command</Box>
+        <Box><Img src={commandline} />Command Line</Box>
         <Box><Img src={jquery} />jQuery</Box>
       </Wrapper>;
   }
