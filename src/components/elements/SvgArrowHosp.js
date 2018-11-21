@@ -70,7 +70,7 @@ const SvgArrow = (props) => {
 
   return <ContainerArrow>
       <Text>
-        As a Sanitary <span>🏥</span>
+        As a Sanitary <span role="img" aria-label="hospital">🏥</span>
       </Text>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 43.1 85.9">
         <path strokeLinecap="round" strokeLinejoin="round" className="st0 draw-arrow" d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1" />
