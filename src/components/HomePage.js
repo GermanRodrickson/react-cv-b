@@ -71,6 +71,21 @@ const Link = styled.a`
 
 
 class HomePage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      height: 0
+    }
+  }
+
+  scroll(value) {
+    this.setState({
+      height: value
+    })
+  }
+
+
   render() {
     return <Wrapper ref={(section) => { this.Violet = section; }}>
         <Title>Frontend Developer</Title>
