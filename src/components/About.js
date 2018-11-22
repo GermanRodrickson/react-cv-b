@@ -97,7 +97,7 @@ const Word = styled.strong`
 
 class About extends Component {
   render() {
-    return <Wrapper>
+    return <Wrapper id="bio">
         <Triange />
         <Title>Bio</Title>
           <WrapperText>
