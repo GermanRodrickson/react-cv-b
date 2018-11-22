@@ -90,7 +90,7 @@ class HomePage extends Component {
     return <Wrapper ref={(section) => { this.Violet = section; }}>
         <Title>Frontend Developer</Title>
         <Text>
-          Hi, I'm <Link href="#">Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
+        Hi, I'm <Link href="index.html?#contacto">Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
           Stack Developer.
         </Text>
       <Button onClick={() => scrollToComponent(this.Violet, { offset: 5, duration: 500, ease: 'inCirc' })} >Get in Touch</Button>

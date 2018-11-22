@@ -76,7 +76,7 @@ class Portfolio extends Component {
           <Typist.Backspace count={22} delay={200} />
           <Text> 正在努力 </Text>
           <Typist.Backspace count={19} delay={200} />
-          <Text> Wait for it <span role="img" aria-label="arm">💪🏻</span> </Text>
+          <Text> Wait for it </Text>
         </Typist>
       </Wrapper>;
   }

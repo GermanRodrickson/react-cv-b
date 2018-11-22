@@ -84,7 +84,7 @@ const Img = styled.img`
 
 class HomePage extends Component {
   render() {
-    return <Wrapper>
+    return <Wrapper id="contacto">
         <a href="mailto:germanrodrickson@gmail.com?subject=Hello,%20I%20saw%20your%20web!">
           <WrapperText>
             <Title>Germán R. Ojeda</Title>
