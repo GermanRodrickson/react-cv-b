@@ -71,29 +71,14 @@ const Link = styled.a`
 
 
 class HomePage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      height: 0
-    }
-  }
-
-  scroll(value) {
-    this.setState({
-      height: value
-    })
-  }
-
-
   render() {
-    return <Wrapper ref={(section) => { this.Violet = section; }}>
+    return <Wrapper>
         <Title>Frontend Developer</Title>
         <Text>
-        Hi, I'm <Link href="index.html?#contacto">Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
+        Hi, I'm <Link href="index.html?#bio" >Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
           Stack Developer.
         </Text>
-      <Button onClick={() => scrollToComponent(this.Violet, { offset: 5, duration: 500, ease: 'inCirc' })} >Get in Touch</Button>
+      <a href="index.html?#contacto"> <Button>Get in Touch</Button></a>
       </Wrapper>;
   }
 }
