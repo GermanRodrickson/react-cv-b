@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import scrollToComponent from "react-scroll-to-component";
+import React, { Component } from 'react'
+import styled from 'styled-components'
+import Parallax from 'parallax-js' 
+
+import layer1 from "../img/angular.png";
+import layer2 from "../img/commandline.png";
+import layer3 from "../img/git.png";
 
 const Wrapper = styled.section`
   background-color: #32363e;
@@ -69,16 +73,39 @@ const Link = styled.a`
   }
 `;
 
+const Img = styled.img`
+  width: 80px;
+  height: 80px;
+`
+
 
 class HomePage extends Component {
+  componentDidMount() {
+    this.parallax = new Parallax(this.scene)
+  }
+  componentWillUnmount() {
+    this.parallax.disable()
+  }
   render() {
     return <Wrapper>
+      <ul ref={el => this.scene = el}>
+      {console.log(this.scene)}
+        <li className="layer" datadepth="0.00">
+          <Img src={layer1} />
+        </li>
+        <li className="layer" datadepth="0.50">
+          <Img src={layer2} />
+        </li>
+        <li className="layer" datadepth="1.00">
+          <Img src={layer3} />
+        </li>
+      </ul>
         <Title>Frontend Developer</Title>
         <Text>
-        Hi, I'm <Link href="index.html?#bio" >Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
+        Hi, I'm <Link href="#bio" >Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
           Stack Developer.
         </Text>
-      <a href="index.html?#contacto"> <Button>Get in Touch</Button></a>
+      <a href="#contacto"> <Button>Get in Touch</Button></a>
       </Wrapper>;
   }
 }

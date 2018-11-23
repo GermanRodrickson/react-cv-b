@@ -47,27 +47,27 @@ class Portfolio extends Component {
       <Title>Portfolio</Title>
         <Typist>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="2"/>
           <Text> Trabajando en ello </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="23"/>
           <Text> J'y travaille </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="24"/>
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} />
+          <Typist.Backspace count={22} delay={200} key="25"/>
           <Text> 正在努力 </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="26"/>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="27"/>
           <Text> Trabajando en ello </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="28"/>
           <Text> J'y travaille </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="29"/>
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} />
+          <Typist.Backspace count={22} delay={200} key="21"/>
           <Text> 正在努力 </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="22"/>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key="222"/>
           <Text> Trabajando en ello </Text>
           <Typist.Backspace count={19} delay={200} />
           <Text> J'y travaille </Text>
