@@ -19,7 +19,7 @@ ReactDOM.render(
   <section>
     <HomePage />
     <Skills />
-    <Experience />
+    {/* <Experience /> */}
     <Experience2 />
     <Portfolio /> 
     <About /> 
