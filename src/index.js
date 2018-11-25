@@ -11,6 +11,7 @@ import Experience from './components/Experience';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Experience2 from './components/Experience2';
 
 const root = document.getElementById('root');
 
@@ -19,6 +20,7 @@ ReactDOM.render(
     <HomePage />
     <Skills />
     <Experience />
+    <Experience2 />
     <Portfolio /> 
     <About /> 
   

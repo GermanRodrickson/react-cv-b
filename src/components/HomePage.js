@@ -105,7 +105,7 @@ class HomePage extends Component {
         Hi, I'm <Link href="#bio" >Germán</Link>! 👋🏻 I'm an <Link href="https://www.ironhack.com/" target="_blank">Ironhacker</Link> & Full
           Stack Developer.
         </Text>
-      <a href="#contacto"> <Button>Get in Touch</Button></a>
+      <a href=" #contacto"> <Button>Get in Touch</Button></a>
       </Wrapper>;
   }
 }
