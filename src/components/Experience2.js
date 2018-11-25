@@ -43,7 +43,18 @@ const Cards = styled.div`
   border: 1px solid black;
   background-color: red;
   position: absolute;
-  left: 50%;
+  left: 52%;
+`
+
+const Date = styled.div`
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  text-align: center;
+  width: 50px;
+  margin-right: -25px;
 `
 
 class Experience2 extends Component {
@@ -52,10 +63,11 @@ class Experience2 extends Component {
     <Wrapper>
       <Title>Experience</Title>
       <Cards>
-        <h2>Hello</h2>
+        <h2>Prueba</h2>
       </Cards>
       <Circle />
       <Line />
+      <Date>2018</Date>
     </Wrapper>)
   }
 }
