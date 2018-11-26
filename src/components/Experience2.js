@@ -43,8 +43,10 @@ const Cards = styled.div`
   border: 1px solid black;
   background-color: red;
   position: absolute;
-  left: 52%;
-`
+
+  left: ${props => (props.primary ? "20%" : "52%")};
+  right: ${props => (props.primary ? "52%" : "20%")};
+`;
 
 const Date = styled.div`
   background-color: #000000;
@@ -67,7 +69,7 @@ class Experience2 extends Component {
       </Cards>
       <Circle />
       <Line />
-      <Date >2018</Date>
+      <Date primary>2018</Date>
     </Wrapper>)
   }
 }
