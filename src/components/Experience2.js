@@ -51,11 +51,11 @@ const Date = styled.div`
   color: white;
   position: absolute;
   right: 50%;
-  top: 50%;
+  top: ${props => (props.primary ? "50%" : "80%")};
   text-align: center;
   width: 50px;
   margin-right: -25px;
-`
+`;
 
 class Experience2 extends Component {
   render() {
@@ -67,7 +67,7 @@ class Experience2 extends Component {
       </Cards>
       <Circle />
       <Line />
-      <Date>2018</Date>
+      <Date >2018</Date>
     </Wrapper>)
   }
 }
