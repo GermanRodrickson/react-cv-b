@@ -7,6 +7,7 @@ const Wrapper = styled.section`
   width: 100%;
   padding: 2rem 0;
   position: relative;
+  height: 600px;
 `;
 
 const Title = styled.h2`
