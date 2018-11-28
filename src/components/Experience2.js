@@ -51,7 +51,8 @@ const CardsRight = styled.div`
   border: 1px solid black;
   background-color: red;
   position: absolute;
-  right: 25%;
+  left: 25%;
+  top: 30%;
 `;
 
 
@@ -71,9 +72,13 @@ class Experience2 extends Component {
     return(
     <Wrapper>
       <Title>Experience</Title>
-      <CardsLeft primary1>
+      <CardsLeft >
           Frontend Developer <br></br> 🗓 2018 - Present <br></br> Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
       </CardsLeft>
+
+      <CardsRight >
+          Hospital de Sant Joan Despí Moisès Broggi <br></br> Medical imaging technician <br></br> 🗓 2016-2018
+      </CardsRight>
       <Circle />
       <Line />
       <Date primary>2018</Date>
