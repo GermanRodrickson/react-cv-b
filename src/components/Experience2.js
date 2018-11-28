@@ -40,14 +40,20 @@ const Circle = styled.div`
   background-color: #000000;
 `;
 
-const Cards = styled.div`
+const CardsLeft = styled.div`
   border: 1px solid black;
   background-color: red;
   position: absolute;
-
-  left: ${props => (props.primary ? "20%" : "52%")};
-  right: ${props => (props.primary ? "52%" : "20%")};
+  right: 25%;
 `;
+
+const CardsRight = styled.div`
+  border: 1px solid black;
+  background-color: red;
+  position: absolute;
+  right: 25%;
+`;
+
 
 const Date = styled.div`
   background-color: #000000;
@@ -65,9 +71,9 @@ class Experience2 extends Component {
     return(
     <Wrapper>
       <Title>Experience</Title>
-      <Cards>
+      <CardsLeft primary1>
           Frontend Developer <br></br> 🗓 2018 - Present <br></br> Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
-      </Cards>
+      </CardsLeft>
       <Circle />
       <Line />
       <Date primary>2018</Date>
