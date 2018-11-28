@@ -54,7 +54,7 @@ const Date = styled.div`
   color: white;
   position: absolute;
   right: 50%;
-  top: ${props => (props.primary ? "50%" : "80%")};
+  top: ${props => (props.primary ? "25%" : "80%")};
   text-align: center;
   width: 50px;
   margin-right: -25px;
@@ -66,7 +66,7 @@ class Experience2 extends Component {
     <Wrapper>
       <Title>Experience</Title>
       <Cards>
-        <h2>Prueba</h2>
+          Frontend Developer <br></br> 🗓 2018 - Present <br></br> Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
       </Cards>
       <Circle />
       <Line />
