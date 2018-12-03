@@ -48,6 +48,11 @@ const CardsLeft = styled.div`
   padding: 10px;
   position: absolute;
   right: 25%;
+  top: ${props => (props.primary ? "30%" : "25%")};
+
+  p {
+    line-height: 1.8em;
+  }
 `;
 
 const CardsRight = styled.div`
@@ -58,7 +63,11 @@ const CardsRight = styled.div`
   padding: 10px;
   position: absolute;
   left: 25%;
-  top: 30%;
+  top: ${props => (props.primary ? "30%" : "50%")};
+
+  p {
+    line-height: 1.8em;
+  }
 `;
 
 
@@ -67,7 +76,7 @@ const Date = styled.div`
   color: white;
   position: absolute;
   right: 50%;
-  top: ${props => (props.primary ? "25%" : "80%")};
+  top: ${props => (props.primary ? "25%" : "45%")};
   text-align: center;
   width: 50px;
   margin-right: -25px;
@@ -86,12 +95,17 @@ class Experience2 extends Component {
           <TitleCard>Frontend Developer</TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
       </CardsLeft>
 
-      <CardsRight >
+      <CardsRight primary>
           <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>🗓 2016-2018</p> Medical imaging technician 
       </CardsRight>
+
+       <CardsLeft primary>
+          <TitleCard>Centre Mèdic Alomar</TitleCard> <p>🗓 2017 </p> Medical imaging technician 
+      </CardsLeft>
       <Circle />
       <Line />
       <Date primary>2018</Date>
+      <Date>2017</Date>
     </Wrapper>)
   }
 }
