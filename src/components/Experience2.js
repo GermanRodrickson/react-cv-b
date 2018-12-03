@@ -41,15 +41,21 @@ const Circle = styled.div`
 `;
 
 const CardsLeft = styled.div`
-  border: 1px solid black;
-  background-color: red;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #666;
+  padding: 10px;
   position: absolute;
   right: 25%;
 `;
 
 const CardsRight = styled.div`
-  border: 1px solid black;
-  background-color: red;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #666;
+  padding: 10px;
   position: absolute;
   left: 25%;
   top: 30%;
@@ -77,7 +83,7 @@ class Experience2 extends Component {
       </CardsLeft>
 
       <CardsRight >
-          Hospital de Sant Joan Despí Moisès Broggi <br></br> Medical imaging technician <br></br> 🗓 2016-2018
+          Hospital de Sant Joan Despí Moisès Broggi <br></br> 🗓 2016-2018 <br></br> Medical imaging technician 
       </CardsRight>
       <Circle />
       <Line />
