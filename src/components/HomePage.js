@@ -56,9 +56,9 @@ const Link = styled.a`
     left top,
     right top,
     from(#45bafc),
-    to(#57eea1)
+    to(#f4f4f4)
   );
-  background: linear-gradient(to right, #45bafc 0%, #57eea1 100%);
+  background: linear-gradient(to right, #45bafc 0%, #f4f4f4 100%);
   background-size: 0 6px;
   background-repeat: no-repeat;
   background-position: left 95%;
@@ -69,10 +69,6 @@ const Link = styled.a`
   }
 `;
 
-const Img = styled.img`
-  width: 80px;
-  height: 80px;
-`
 
 
 class HomePage extends Component {

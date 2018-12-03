@@ -73,17 +73,21 @@ const Date = styled.div`
   margin-right: -25px;
 `;
 
+const TitleCard = styled.h3`
+  color: #44bafc;
+`;
+
 class Experience2 extends Component {
   render() {
     return(
     <Wrapper>
       <Title>Experience</Title>
       <CardsLeft >
-          Frontend Developer <br></br> 🗓 2018 - Present <br></br> Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
+          <TitleCard>Frontend Developer</TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
       </CardsLeft>
 
       <CardsRight >
-          Hospital de Sant Joan Despí Moisès Broggi <br></br> 🗓 2016-2018 <br></br> Medical imaging technician 
+          <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>🗓 2016-2018</p> Medical imaging technician 
       </CardsRight>
       <Circle />
       <Line />
