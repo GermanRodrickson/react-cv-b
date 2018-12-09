@@ -10,7 +10,7 @@ import Skills from './components/Skills';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Experience2 from './components/Experience2';
+import Experience from './components/Experience';
 
 const root = document.getElementById('root');
 
@@ -18,7 +18,7 @@ ReactDOM.render(
   <section>
     <HomePage />
     <Skills />
-    <Experience2 />
+    <Experience />
     <Portfolio /> 
     <About /> 
   

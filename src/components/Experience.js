@@ -2,27 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 
-//------ Images
-import logo from "../img/logo.png";
-
-//-------
-
-
-//------- Elements
-import SvgArrow from './elements/SvgArrow'
-import SvgArrowHosp from './elements/SvgArrowHosp'
-//-------
-
 const Wrapper = styled.section`
+  position: relative;
   background-color: #f4f4f4;
   width: 100%;
   padding: 2rem 0;
   position: relative;
 `;
-
-const Container = styled.div `
-  margin: 0 auto;
-`
 
 const Title = styled.h2`
   letter-spacing: 3px;
@@ -33,93 +19,61 @@ const Title = styled.h2`
   font-weight: 600;
 `;
 
-const SecondaryTitle = styled.h3`
-  letter-spacing: 3px;
-  text-align: center;
-  font-size: 2rem;
-  color: #32363e;
-  margin-bottom: 20px;
-  font-weight: 600;
-  @media only screen and (max-width: 500px) {
-    padding: 0 1em;
+
+const Cards = styled.div`
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #666;
+  padding: 10px;
+  width: 40%;
+  margin: 5px auto;
+
+  p {
+    line-height: 1.8em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      width: 70%;
+    }
   }
 `;
 
-const Img = styled.img`
-  display: block;
-  margin: 10px auto;
+const Sanitary = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 `
 
-const Text = styled.p`
-  font-size: 1.3em;
-  text-align: center;
-  display: block;
-  margin: 10px auto;
+const TitleCard = styled.h3`
+  color: #44bafc;
 `;
 
-const DeveloperWrapper = styled.div`
-  padding-bottom: 30px;
-  border-bottom: 1px solid #32363e;
-  width: 70%;
-  margin: 50px auto;
-
-  @media only screen and (max-width: 500px) {
-    width: 90%;
-  }
-`;
-
-const HospitalWrapper = styled.div`
-  width: 70%;
-  margin: 0 auto;
-  @media only screen and (max-width: 500px) {
-    width: auto;
-  }
-`;
-
-const Place = styled.p`
-  letter-spacing: 3px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #32363e;
-  margin-bottom: 20px;
-  @media only screen and (max-width: 500px) {
-    padding: 0 2em;
-  }
-`;
-
-class Experience extends Component {
+class Experience2 extends Component {
   render() {
-    
     return <Wrapper>
-        <Container>
-          <Title>Experience</Title>
-          <SvgArrow /> 
+        <Title>Experience</Title>
+        <Cards>
+          <TitleCard>Frontend Developer</TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>
+            JavaScript
+          </strong>, <strong>SCSS</strong> and <strong>React</strong>
+        </Cards>
 
-          <DeveloperWrapper>
-            <Img src={logo} />
-            <SecondaryTitle>Frontend Developer</SecondaryTitle>
-            <Text>🗓 2018 - Present</Text>
-            <Text>
-              Focus on <strong>JavaScript</strong>, <strong>SCSS</strong> and <strong>React</strong>
-            </Text>
-          </DeveloperWrapper>
+        <Sanitary>As a Sanitary</Sanitary>
 
-          <SvgArrowHosp/>
-            <HospitalWrapper>
-            <Place>Hospital de Sant Joan Despí Moisès Broggi</Place>
-            <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-            <Text>🗓 2016-2018 </Text>
-            <br></br>
-            <br></br>
-            <Place>Centre Mèdic Alomar</Place>
-            <SecondaryTitle>Medical imaging technician</SecondaryTitle>
-            <Text>🗓 2017 </Text>
-          </HospitalWrapper>
-        </Container>
+        <Cards>
+          <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>
+            🗓 2016-2018
+          </p> Medical imaging technician
+        </Cards>
+
+        <Cards>
+          <TitleCard>Centre Mèdic Alomar</TitleCard> <p>🗓 2017 </p> Medical imaging technician
+        </Cards>
       </Wrapper>;
-    
   }
 }
 
-export default Experience;
+export default Experience2;
 
