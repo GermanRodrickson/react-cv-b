@@ -40,11 +40,20 @@ const Cards = styled.div`
   }
 `;
 
+
+
 const Sanitary = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-`
+  width: 70%;
+  height: 2px;
+  background-color: #32363e;
+  margin: 20px auto;
+
+  p {
+    color: red;
+    margin: -10px;
+    text-align: center;
+  }
+`;
 
 const TitleCard = styled.h3`
   color: #44bafc;
@@ -59,8 +68,9 @@ class Experience2 extends Component {
             JavaScript
           </strong>, <strong>SCSS</strong> and <strong>React</strong>
         </Cards>
-
-        <Sanitary>As a Sanitary</Sanitary>
+        
+        <Sanitary>
+        </Sanitary>
 
         <Cards>
           <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>
