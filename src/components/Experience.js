@@ -40,46 +40,29 @@ const Cards = styled.div`
   }
 `;
 
-
-
-const Sanitary = styled.div`
-  width: 70%;
-  height: 2px;
-  background-color: #32363e;
-  margin: 20px auto;
-
-  p {
-    color: red;
-    margin: -10px;
-    text-align: center;
-  }
-`;
-
 const TitleCard = styled.h3`
   color: #44bafc;
 `;
+
 
 class Experience2 extends Component {
   render() {
     return <Wrapper>
         <Title>Experience</Title>
         <Cards>
-          <TitleCard>Frontend Developer</TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>
+          <TitleCard>Frontend Developer <span role="img" aria-label="laptop">💻</span></TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>
             JavaScript
           </strong>, <strong>SCSS</strong> and <strong>React</strong>
         </Cards>
-        
-        <Sanitary>
-        </Sanitary>
 
         <Cards>
-          <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>
+          <TitleCard>Hospital de Sant Joan Despí Moisès Broggi <span role="img" aria-label="hospital">🏥</span> </TitleCard> <p>
             🗓 2016-2018
           </p> Medical imaging technician
         </Cards>
 
         <Cards>
-          <TitleCard>Centre Mèdic Alomar</TitleCard> <p>🗓 2017 </p> Medical imaging technician
+        <TitleCard>Centre Mèdic Alomar <span role="img" aria-label="hospital">🏥</span> </TitleCard> <p>🗓 2017 </p> Medical imaging technician
         </Cards>
       </Wrapper>;
   }
