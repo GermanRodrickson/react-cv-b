@@ -60,7 +60,7 @@ class Portfolio extends Component {
           <Typist.Backspace count={22} delay={200} key={Date.now()}/>
           <Text> 正在努力 </Text>
           <Typist.Backspace count={19} delay={200} key={Date.now()} />
-          <Text> Wait for it </Text>
+          <Text> Wait for it <span role="img" aria-label="arm">💪🏻</span></Text>
         </Typist>
       </Wrapper>;
   }
