@@ -29,7 +29,6 @@ const Title = styled.h2`
   font-size: 3rem;
   color: #32363e;
   margin-bottom: 40px;
-  font-weight: 600;
 `;
 
 const Text = styled.a`
@@ -38,6 +37,11 @@ const Text = styled.a`
   display: inline-block;
   width: auto;
   margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    & {
+      font-size: 2em;
+    }
+  }
 `;
 
 

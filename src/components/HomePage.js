@@ -13,7 +13,6 @@ const Title = styled.h1`
   text-align: center;
   font-size: 3rem;
   color: #44bafc;
-  font-weight: 600;
 `;
 
 const Button = styled.button`

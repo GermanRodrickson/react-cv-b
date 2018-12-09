@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import SvgArrowHosp from "./elements/SvgArrowHosp";
 
 const Wrapper = styled.section`
   position: relative;
@@ -34,7 +33,11 @@ const Cards = styled.div`
     line-height: 1.8em;
   }
 
-  
+  @media only screen and (max-width: 600px) {
+    & {
+      width: 70%;
+    }
+  }
 `;
 
 const TitleCard = styled.h3`
@@ -50,6 +53,8 @@ class Experience2 extends Component {
             JavaScript
           </strong>, <strong>SCSS</strong> and <strong>React</strong>
         </Cards>
+
+        
 
         <Cards>
           <TitleCard>Hospital de Sant Joan Despí Moisès Broggi</TitleCard> <p>
