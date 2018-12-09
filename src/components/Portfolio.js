@@ -47,35 +47,35 @@ class Portfolio extends Component {
       <Title>Portfolio</Title>
         <Typist>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} key="2"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Trabajando en ello </Text>
-          <Typist.Backspace count={19} delay={200} key="23"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> J'y travaille </Text>
-          <Typist.Backspace count={19} delay={200} key="24"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} key="25"/>
+          <Typist.Backspace count={22} delay={200} key={Date.now()}/>
           <Text> 正在努力 </Text>
-          <Typist.Backspace count={19} delay={200} key="26"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} key="27"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Trabajando en ello </Text>
-          <Typist.Backspace count={19} delay={200} key="28"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> J'y travaille </Text>
-          <Typist.Backspace count={19} delay={200} key="29"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} key="21"/>
+          <Typist.Backspace count={22} delay={200} key={Date.now()}/>
           <Text> 正在努力 </Text>
-          <Typist.Backspace count={19} delay={200} key="22"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} key="222"/>
+          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Trabajando en ello </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key={Date.now()} />
           <Text> J'y travaille </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key={Date.now()} />
           <Text> Lavorando su di esso </Text>
-          <Typist.Backspace count={22} delay={200} />
+          <Typist.Backspace count={22} delay={200} key={Date.now()} />
           <Text> 正在努力 </Text>
-          <Typist.Backspace count={19} delay={200} />
+          <Typist.Backspace count={19} delay={200} key={Date.now()} />
           <Text> Wait for it </Text>
         </Typist>
       </Wrapper>;

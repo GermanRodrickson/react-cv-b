@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import SvgArrowHosp from "./elements/SvgArrowHosp";
+
 const Wrapper = styled.section`
   position: relative;
   background-color: #f4f4f4;
   width: 100%;
   padding: 2rem 0;
   position: relative;
-  height: 600px;
 `;
 
 const Title = styled.h2`
@@ -27,11 +28,13 @@ const Cards = styled.div`
   color: #666;
   padding: 10px;
   width: 40%;
-  margin: 0 auto;
+  margin: 5px auto;
 
   p {
     line-height: 1.8em;
   }
+
+  
 `;
 
 const TitleCard = styled.h3`
