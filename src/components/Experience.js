@@ -38,6 +38,12 @@ const Cards = styled.div`
       width: 70%;
     }
   }
+
+  @media only screen and (max-width: 850px) {
+    & {
+      width: 60%;
+    }
+  }
 `;
 
 const TitleCard = styled.h3`
