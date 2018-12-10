@@ -37,6 +37,12 @@ const Text = styled.a`
   display: inline-block;
   width: auto;
   margin: 0 auto;
+
+  span {
+    font-size: 1em;
+    animation: none;
+  }
+
   @media only screen and (max-width: 600px) {
     & {
       font-size: 2em;
@@ -45,22 +51,23 @@ const Text = styled.a`
 `;
 
 
+
 class Portfolio extends Component {
   render() {
     return <Wrapper>
       <Title>Portfolio</Title>
         <Typist>
           <Text> Working on it </Text>
-          <Typist.Backspace count={19} delay={200} key={Date.now()}/>
+          {/* <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Trabajando en ello </Text>
           <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> J'y travaille </Text>
           <Typist.Backspace count={19} delay={200} key={Date.now()}/>
           <Text> Lavorando su di esso </Text>
           <Typist.Backspace count={22} delay={200} key={Date.now()}/>
-          <Text> 正在努力 </Text>
+          <Text> 正在努力 </Text> */}
           <Typist.Backspace count={19} delay={200} key={Date.now()} />
-          <Text> Wait for it</Text>
+          <Text> Wait for it <span role="img" aria-label="arm">💪🏻</span> </Text> 
         </Typist>
       </Wrapper>;
   }
