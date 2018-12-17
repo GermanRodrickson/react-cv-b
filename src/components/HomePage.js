@@ -3,38 +3,77 @@ import styled from 'styled-components'
 
 
 const Wrapper = styled.section`
-  background-color: #32363e;
   width: 100%;
+  height: 35vh;
   padding: 10rem 0;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 `;
 
 const Title = styled.h1`
   letter-spacing: 2px;
   text-align: center;
   font-size: 3rem;
-  color: #44bafc;
+  color: #FFFFFF;
 `;
 
 const Button = styled.button`
   background: none;
-  border: 2px solid;
+  border: 2px solid #ffffff;
   line-height: 1;
   margin: 0 auto;
   padding: 1em 2em;
-  color: #bec6d5;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
   letter-spacing: 2px;
 
   &:hover {
-    box-shadow: inset -6.5em 0 0 0 #44bafc, inset 6.5em 0 0 0 #44bafc;
-    color: #FFFFFF;
+    box-shadow: inset -6.5em 0 0 0 #2f3640, inset 6.5em 0 0 0 #2f3640;
+    color: #ffffff;
     border: 2px solid #bec6d5;
   }
 `;
 
 const Text = styled.p`
-  color: #bec6d5;
+  color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
   font-size: 1.2rem;
@@ -47,16 +86,10 @@ const Text = styled.p`
 `;
 
 const Link = styled.a`
-  color: #44BAFC;
+  color: #2f3640;
   display: inline-block;
-  transition: all .2s linear;
-  background: (
-    linear,
-    left top,
-    right top,
-    from(#45bafc),
-    to(#f4f4f4)
-  );
+  transition: all 0.2s linear;
+  background: (linear, left top, right top, from(#45bafc), to(#f4f4f4));
   background: linear-gradient(to right, #45bafc 0%, #f4f4f4 100%);
   background-size: 0 6px;
   background-repeat: no-repeat;
@@ -64,7 +97,7 @@ const Link = styled.a`
 
   &:hover {
     background-size: 100% 6px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 `;
 

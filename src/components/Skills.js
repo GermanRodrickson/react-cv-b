@@ -107,7 +107,7 @@ const Triange = styled.div`
 class Skills extends Component {
   render() {
     return <Wrapper>
-        <Triange></Triange>
+        {/* <Triange></Triange> */}
         <Title>Skills</Title>
         <Box><Img src={react} />React</Box>
         <Box><Img src={angular} />AngularJS</Box>
