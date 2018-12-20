@@ -66,9 +66,9 @@ const Button = styled.button`
   letter-spacing: 2px;
 
   &:hover {
-    box-shadow: inset -6.5em 0 0 0 #2f3640, inset 6.5em 0 0 0 #2f3640;
-    color: #ffffff;
-    border: 2px solid #bec6d5;
+    box-shadow: inset -6.5em 0 0 0 #ffffff, inset 6.5em 0 0 0 #ffffff;
+    color: #d93175;
+    border: 2px solid #ffffff;
   }
 `;
 
