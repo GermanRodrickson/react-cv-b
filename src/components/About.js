@@ -9,7 +9,7 @@ import profile from '../img/descarga.png'
 
 
 const Wrapper = styled.section`
-  background-color: #23a6d5;
+  background-color: #f4f4f4;
   width: 100%;
   padding: 2rem 0;
   position: relative;
@@ -40,12 +40,13 @@ const Title = styled.h2`
   letter-spacing: 2px;
   text-align: center;
   font-size: 3rem;
-  color: #ffffff;
+  color: #000000;
   margin-top: 40px;
   margin-bottom: 40px;
 `;
 
 const Text = styled.p`
+  color: #000000;
   width: 500px;
   font-size: 1.2rem;
   display: inline-block;
@@ -68,7 +69,6 @@ const Text = styled.p`
 `;
 
 const WrapperText = styled.div`
-  background-color: #FFFFFF;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
@@ -98,7 +98,7 @@ const Triange = styled.div`
 `
 
 const Word = styled.strong`
-  color: #44bafc;
+  color: #000000;
 `
 
 class About extends Component {

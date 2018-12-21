@@ -23,6 +23,7 @@ const Wrapper = styled.section`
   width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+  margin-bottom: 30px;
   position: relative;
   @media only screen and (max-width: 1200px) {
     & {
