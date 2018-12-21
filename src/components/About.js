@@ -9,11 +9,11 @@ import profile from '../img/descarga.png'
 
 
 const Wrapper = styled.section`
-  background-color: #f4f4f4;
+  background-color: #23a6d5;
   width: 100%;
   padding: 2rem 0;
   position: relative;
-`
+`;
 
 const Img = styled.img`
   width: 350px;
@@ -40,8 +40,9 @@ const Title = styled.h2`
   letter-spacing: 2px;
   text-align: center;
   font-size: 3rem;
-  color: #32363e;
+  color: #ffffff;
   margin-top: 40px;
+  margin-bottom: 40px;
 `;
 
 const Text = styled.p`
@@ -67,8 +68,14 @@ const Text = styled.p`
 `;
 
 const WrapperText = styled.div`
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
   @media only screen and (max-width: 900px) {
     & {
       display: block;

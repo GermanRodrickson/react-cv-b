@@ -92,22 +92,11 @@ const Title = styled.h2`
   margin: 30px 0px;
 `;
 
-const Triange = styled.div`
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 40px 40px 0 40px;
-  border-color: #32363e transparent transparent transparent;
-  position: absolute;
-  top: 0;
-  right: 50%;
-  margin-right: -40px;
-`;
+
 
 class Skills extends Component {
   render() {
     return <Wrapper>
-        {/* <Triange></Triange> */}
         <Title>Skills</Title>
         <Box><Img src={react} />React</Box>
         <Box><Img src={angular} />AngularJS</Box>
