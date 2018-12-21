@@ -47,9 +47,7 @@ const Cards = styled.div`
   }
 `;
 
-const TitleCard = styled.h3`
-  color: #e73c7e;
-`;
+
 
 const Triangle = styled.div`
   width: 0;
@@ -71,19 +69,19 @@ class Experience2 extends Component {
         <Triangle />
         <Title>Experience</Title>
         <Cards>
-          <TitleCard>Frontend Developer <span role="img" aria-label="laptop">💻</span></TitleCard> <p>🗓 2018 - Present</p>Focus on <strong>
+          <strong>Frontend Developer <span role="img" aria-label="laptop">💻</span></strong> <p>🗓 2018 - Present</p>Focus on <strong>
             JavaScript
           </strong>, <strong>SCSS</strong> and <strong>React</strong>
         </Cards>
 
         <Cards>
-          <TitleCard>Hospital de Sant Joan Despí Moisès Broggi <span role="img" aria-label="hospital">🏥</span> </TitleCard> <p>
+          <strong>Hospital de Sant Joan Despí Moisès Broggi <span role="img" aria-label="hospital">🏥</span> </strong> <p>
             🗓 2016-2018
           </p> Medical imaging technician
         </Cards>
 
         <Cards>
-        <TitleCard>Centre Mèdic Alomar <span role="img" aria-label="hospital">🏥</span> </TitleCard> <p>🗓 2017 </p> Medical imaging technician
+        <strong>Centre Mèdic Alomar <span role="img" aria-label="hospital">🏥</span> </strong> <p>🗓 2017 </p> Medical imaging technician
         </Cards>
       </Wrapper>;
   }
