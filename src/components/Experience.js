@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   position: relative;
-  background-color: #e73c7e;
+  background-color: #f4f4f4;
   width: 100%;
   padding: 2rem 0;
   position: relative;
@@ -14,7 +14,7 @@ const Title = styled.h2`
   letter-spacing: 3px;
   text-align: center;
   font-size: 3rem;
-  color: #ffffff;
+  color: #32363e;
   margin-bottom: 40px;
   font-weight: 600;
   margin-top: 30px;
