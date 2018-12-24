@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   height: 35vh;
   padding: 10rem 0;
   color: #fff;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #45bafc, #0984e3, #32363e);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   @-webkit-keyframes Gradient {
@@ -86,17 +86,18 @@ const Text = styled.p`
 `;
 
 const Link = styled.a`
-  color: #2f3640;
+  color: #ffffff;
+  font-weight: 900;
   display: inline-block;
   transition: all 0.2s linear;
-  background: (linear, left top, right top, from(#45bafc), to(#f4f4f4));
-  background: linear-gradient(to right, #45bafc 0%, #f4f4f4 100%);
-  background-size: 0 6px;
+  background: (linear, left top, right top, from(#32363e), to(#32363e));
+  background: linear-gradient(to right, #32363e 0%, #32363e 100%);
+  background-size: 0 4px;
   background-repeat: no-repeat;
-  background-position: left 95%;
+  background-position: left 110%;
 
   &:hover {
-    background-size: 100% 6px;
+    background-size: 100% 4px;
     color: #ffffff;
   }
 `;
