@@ -98,8 +98,8 @@ const Triange = styled.div`
 `
 
 const Word = styled.strong`
-  color: #000000;
-`
+  color: #45bafc;
+`;
 
 class About extends Component {
   render() {

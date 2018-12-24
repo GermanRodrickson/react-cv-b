@@ -61,6 +61,10 @@ const Triangle = styled.div`
   margin-right: -40px;
 `;
 
+const Words = styled.span`
+  color: #45bafc;
+`;
+
 
 class Experience2 extends Component {
   render() {
@@ -68,19 +72,19 @@ class Experience2 extends Component {
         <Triangle />
         <Title>Experience</Title>
         <Cards>
-          <strong>Frontend Developer <span role="img" aria-label="laptop">💻</span></strong> <p>🗓 2018 - Present</p>Focus on <strong>
+          <Words>Frontend Developer <span role="img" aria-label="laptop">💻</span></Words> <p>🗓 2018 - Present</p>Focus on <strong>
             JavaScript
           </strong>, <strong>SCSS</strong> and <strong>React</strong>
         </Cards>
 
         <Cards>
-          <strong>Hospital de Sant Joan Despí Moisès Broggi <span role="img" aria-label="hospital">🏥</span> </strong> <p>
+          <Words>Hospital de Sant Joan Despí Moisès Broggi <span role="img" aria-label="hospital">🏥</span> </Words> <p>
             🗓 2016-2018
           </p> Medical imaging technician
         </Cards>
 
         <Cards>
-        <strong>Centre Mèdic Alomar <span role="img" aria-label="hospital">🏥</span> </strong> <p>🗓 2017 </p> Medical imaging technician
+          <Words>Centre Mèdic Alomar <span role="img" aria-label="hospital">🏥</span> </Words> <p>🗓 2017 </p> Medical imaging technician
         </Cards>
       </Wrapper>;
   }
