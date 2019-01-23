@@ -8,10 +8,12 @@
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5",
     "react-typist": "^2.0.4",
+    "serve": "^10.1.1",
     "styled-components": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start" : "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
